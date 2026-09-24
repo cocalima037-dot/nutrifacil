@@ -296,7 +296,7 @@ with aba_chat:
                     with st.spinner("Analisando imagem com a IA..."):
                         try:
                             response = client.models.generate_content(
-                                model="gemini-3.6-flash",
+                                model="gemini-1.5-flash",
                                 contents=[prompt_completo, img_pil]
                             )
                             resposta_ia = response.text
